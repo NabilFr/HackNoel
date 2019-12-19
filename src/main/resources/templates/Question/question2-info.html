@@ -8,24 +8,28 @@
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/question.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/wave.css}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container d-flex justify-content-center flow-column my-5">
-    <h1 class="text-center">2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit ?</h1>
-</div>
-<div class="container d-flex justify-content-center flow-column my-5">
-    <p>"Le projet de «Corridor Hydrogène pour les régions pyrénéennes» va développer un banc d’essai à taille réelle
-        d’un corridor transfrontalier de stations de distribution d’hydrogène pour véhicules automobiles qui reliera les
-        régions pyrénéennes d’Espagne et France avec l’Europe du Nord et l’Europe Centrale, là où le développement
-        d’infrastructures associées à ce type de mobilité décarbonée est le plus avancé."</p>
-</div>
-<div class="text-center my-5">
-    <a th:href="@{/question2}">
-        <button type="button" class="btn btn-primary center-block">QUESTION SUIVANTE</button>
-    </a>
-</div>
-</div>
+<section class="wave-section">
+    <div class="container d-flex justify-content-center flow-column my-5">
+        <h1 class="text-center display-4">Quand a débuté le projet H2PIYR ?</h1>
+    </div>
+    <div class="container d-flex justify-content-center flow-column my-5">
+        <h4 class="white rounded">Le projet a débuté le 1er juillet 2016 et finira normalement le 30 juin 2021, soit une durée de 5 ans.</h4>
+    </div>
+    <div class="text-center my-5">
+        <a th:href="@{/question3}">
+            <button type="button" class="btn btn-primary center-block">QUESTION SUIVANTE</button>
+        </a>
+    </div>
+    </div>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+</section>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
