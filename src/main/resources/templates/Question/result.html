@@ -9,12 +9,37 @@
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/question.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/wave.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/tubelight.css}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-<section class="wave-section">
+<section class="wave-section black-bg">
     <div class="container d-flex justify-content-center my-5">
-        <h1 class="text-center display-3">Votre score est de : </h1>
+        <ul>
+            <li>V</li>
+            <li>O</li>
+            <li>T</li>
+            <li>R</li>
+            <li>E</li>
+            <li class="space"></li>
+            <li>S</li>
+            <li>C</li>
+            <li>O</li>
+            <li>R</li>
+            <li>E</li>
+            <li class="space"></li>
+            <li>E</li>
+            <li>S</li>
+            <li>T</li>
+            <li class="space"></li>
+            <li>D</li>
+            <li>E</li>
+            <li class="space"></li>
+            <li th:text="${result}"></li>
+
+
+        </ul>
+
     </div>
     <div class="container d-flex justify-content-center flex-column mb-5">
     </div>
