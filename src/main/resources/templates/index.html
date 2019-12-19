@@ -7,78 +7,50 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <title>Accueil</title>
     <meta content="width=device-width, user-scalable=no" name="viewport">
-    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{/css/question.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{/css/projet.css}">
-    <link th:href="@{/css/index.css}" href="../static/css/index.css" rel="stylesheet">
-
+    <link href="../static/css/index.css" rel="stylesheet" th:href="@{/css/index.css}">
 </head>
 <body>
-<!-- Modal -->
-<div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Abonnez-vous à notre Newsletter !
-                Tous les mois suivez l'avancée de nos projets dans votre boite de réception !</p>
-                <label>Email :</label>
-                <input type="email">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div th:fragment="fragment-header" class="header">
+<div class="header" th:fragment="fragment-header">
     <div class="medias">
         <ul class="social-media">
             <li><a href="#">
-                <ion-icon class="icon-inner" th:src="@{/images/_ionicons_svg_logo-facebook.svg}" src="../static/images/_ionicons_svg_logo-facebook.svg"></ion-icon>
+                <ion-icon class="icon-inner" src="../static/images/facebook.svg"
+                          th:src="@{/images/facebook.svg}"></ion-icon>
             </a></li>
             <li><a href="#">
-                <ion-icon class="icon-inner" th:src="@{/images/_ionicons_svg_logo-instagram.svg}" src="../static/images/_ionicons_svg_logo-instagram.svg"></ion-icon>
+                <ion-icon class="icon-inner" src="../static/images/instagram.svg"
+                          th:src="@{/images/instagram.svg}"></ion-icon>
             </a></li>
         </ul>
     </div>
     <header>
-        <h1>Accueil</h1>
+        <h1>H2PiyR</h1>
         <ul class="nav justify-content-around">
             <li class="nav-item">
-                <a class="nav-link" th:href="@{/}" href="#">Accueil</a>
+                <a class="nav-link" href="#" th:href="@{/}">Accueil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" th:href="@{/question1}" href="#">Quizz</a>
+                <a class="nav-link" href="#" th:href="@{/question1}">Quizz</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" th:href="@{/projet}" href="#">Projet</a>
+                <a class="nav-link" href="#" th:href="@{/projet}">Projet</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" th:href="@{/a-propos}" href="#">À propos</a>
+                <a class="nav-link" href="#" th:href="@{/a-propos}">À propos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" th:href="@{/}" href="#">Villes</a>
+                <a class="nav-link" href="#" th:href="@{/}">Villes</a>
             </li>
         </ul>
         <div class="divider"></div>
     </header>
 </div>
 <div class="content">
-    <img class="img" th:src="@{/images/IMG_1651-e1470987244585.jpg}" src="../static/images/IMG_1651-e1470987244585.jpg">
-    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur.</p>
+    <img alt="image" class="img" src="../static/images/PlaquetteH2day.jpg" th:src="@{/images/PlaquetteH2day.jpg}">
+    <p class="text">L’hydrogène c’est pour <span id="maintenant">demain</span>, maintenant.</span></p>
 </div>
 
+<img alt="logo" class="logo" src="../static/images/LogoH2PiyR.jpg" th:src="@{/images/LogoH2PiyR.jpg}">
 <div class="quizz">
     <h3>Le quizz c'est :</h3>
     <p class="content-quizz">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -87,36 +59,70 @@
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
         pariatur.</p>
     <div class="button">
-        <a th:href="@{/question1}"><button>Voulez vous commencer le jeu interactif</button></a>
+        <button>Commencer le jeu interactif</button>
     </div>
 </div>
-
+<div class="carte">
+    <div class="legends">
+        <a class="legend" href="#" title="Opérationnel">
+            <ion-icon class="opérationnel" name="pin"
+                      src="../static/images/pin.svg" th:src="@{/images/pin.svg}"></ion-icon>
+            Opérationnel</a>
+        <a class="legend" href="#" title="En cours">
+            <ion-icon class="enCours" name="pin"
+                      src="../static/images/pin.svg" th:src="@{/images/pin.svg}"></ion-icon>
+            En cours</a>
+    </div>
+    <a href="#" title="ALBI">
+        <ion-icon class="albi" name="pin"
+                  src="../static/images/pin.svg" th:src="@{/images/pin.svg}"></ion-icon>
+    </a>
+    <a href="#" title="PAMIERS">
+        <ion-icon class="pamiers" name="pin"
+                  src="../static/images/pin.svg" th:src="@{/images/pin.svg}"></ion-icon>
+    </a>
+    <a href="#" title="WALQA">
+        <ion-icon class="walqa" name="pin"
+                  src="../static/images/pin.svg" th:src="@{/images/pin.svg}"></ion-icon>
+    </a>
+    <a href="#" title="VALDESPARTERA">
+        <ion-icon class="valdespartera" name="pin"
+                  src="../static/images/pin.svg" th:src="@{/images/pin.svg}"></ion-icon>
+    </a>
+    <a href="#" title="RODEZ">
+        <ion-icon class="rodez" name="pin"
+                  src="../static/images/pin.svg" th:src="@{/images/pin.svg}"></ion-icon>
+    </a>
+    <img alt="map" src="../static/images/carte.png" th:src="@{/images/carte.png}">
+</div>
 <div class="medias">
     <ul class="social-media">
         <li><a href="#">
-            <ion-icon class="icon-inner" th:src="@{/images/_ionicons_svg_logo-facebook.svg}" src="../static/images/_ionicons_svg_logo-facebook.svg"></ion-icon>
+            <ion-icon class="icon-inner" src="../static/images/facebook.svg"
+                      th:src="@{/images/facebook.svg}"></ion-icon>
         </a></li>
         <li><a href="#">
-            <ion-icon class="icon-inner" th:src="@{/images/_ionicons_svg_logo-instagram.svg}" src="../static/images/_ionicons_svg_logo-instagram.svg"></ion-icon>
+            <ion-icon class="icon-inner" src="../static/images/instagram.svg"
+                      th:src="@{/images/instagram.svg}"></ion-icon>
         </a></li>
     </ul>
 </div>
 <footer th:fragment="fragment-footer">
     <ul class="nav justify-content-around">
         <li class="nav-item">
-            <a class="nav-link" th:href="@{/}" href="#">Accueil</a>
+            <a class="nav-link" href="#" th:href="@{/}">Accueil</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" th:href="@{/question1}" href="#">Quizz</a>
+            <a class="nav-link" href="#" th:href="@{/question1}">Quizz</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" th:href="@{/projet}" href="#">Projet</a>
+            <a class="nav-link" href="#" th:href="@{/projet}">Projet</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" th:href="@{/a-propos}" href="#">À propos</a>
+            <a class="nav-link" href="#" th:href="@{/a-propos}">À propos</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" th:href="@{/}" href="#">Villes</a>
+            <a class="nav-link" href="#" th:href="@{/}">Villes</a>
         </li>
     </ul>
     <div class="divider"></div>
@@ -124,8 +130,9 @@
         <div>
             <span class="signature">
                 Made with
-                <ion-icon name="heart" th:src="@{/images/_ionicons_svg_md-heart.svg}" src="../static/images/_ionicons_svg_md-heart.svg"> </ion-icon>
-                 by iscom & wilder 2019.
+                <ion-icon id="heart" name="heart" src="../static/images/heart.svg"
+                          th:src="@{/images/heart.svg}"> </ion-icon>
+                 by ISCOM & WILDER 2019.
             </span>
         </div>
     </div>
