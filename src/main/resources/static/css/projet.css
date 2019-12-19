@@ -11,6 +11,16 @@ p {
     color: #8f8f8f;
 }
 
+/*Margin articles*/
+
+.hydrogen {
+    padding-left: 15px;
+    padding-top: 50px;
+}
+
+.last {
+    padding-bottom: 100px;
+}
 /* Headings */
 
 .big-heading {
