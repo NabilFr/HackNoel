@@ -33,7 +33,7 @@ p {
 /* Sections */
 
 .colored-section {
-    background-color: #ff4c68;
+    background-color: #9FAEE5;
     color: #fff;
 }
 
@@ -71,7 +71,7 @@ p {
 /* Title Section */
 
 #title {
-    background-color: #ff4c68;
+    background-color: #9FAEE5;
     color: #fff;
     text-align: left;
 }
@@ -87,6 +87,10 @@ p {
     transform: rotate(25deg);
     position: absolute;
     right: 30%;
+}
+
+.video-youtube {
+    border-radius: 7px;
 }
 
 /* Features Section */
@@ -115,7 +119,11 @@ p {
 /* Testimonial Section */
 
 #testimonials {
-    background-color: #ef8172;
+    background-color: #9FAEE5;
+}
+
+.p-colored-section {
+    color: #fff;
 }
 
 .testimonial-text {
