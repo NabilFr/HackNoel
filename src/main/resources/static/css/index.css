@@ -128,3 +128,12 @@ footer {
     margin-left: 20%;
     margin-top: 1em;
 }
+
+#modal {
+    display: block;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+}
