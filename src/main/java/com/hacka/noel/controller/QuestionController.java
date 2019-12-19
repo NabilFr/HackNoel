@@ -38,11 +38,7 @@ public class QuestionController {
         return "Question/question3";
     }
 
-    @GetMapping("/question3-info")
-    public String question3Info(@RequestParam int answer) {
-        question.setResult(question.getResult() + answer);
-        return "Question/question3-info";
-    }
+
 
     @GetMapping("/question4")
     public String question4() {
