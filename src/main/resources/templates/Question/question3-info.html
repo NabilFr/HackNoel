@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Question 1</title>
@@ -13,27 +13,20 @@
 </head>
 <body>
 <section class="wave-section">
-    <div class="container d-flex justify-content-center my-5">
-        <h1 class="text-center display-4">Quand a débuté le projet H2PIYR ? </h1>
+    <div class="container d-flex justify-content-center flex-column my-5">
+        <h1 class="text-center display-4">Quel sera son tracé ?</h1>
     </div>
-    <div class="bg-transparent container d-flex justify-content-center flex-column mb-5">
-        <div class="bg-transparent form-check my-4 text-center">
-            <a class="text-decoration-none" th:href="@{/question2-info(answer=${1})}">
-                <button type="button" class="btn-basic btn-block btn-lg py-3 rounded">1er juillet 2016</button>
-            </a>
-        </div>
-        <div class="bg-transparent form-check my-4 text-center">
-            <a class="text-decoration-none" th:href="@{/question2-info(answer=${0})}">
-                <button type="button" class="btn-basic btn-block btn-lg py-3 rounded">A l’âge de pierre</button>
-            </a>
-        </div>
-        <div class="bg-transparent form-check my-4 text-center">
-            <a class="text-decoration-none" th:href="@{/question2-info(answer=${0})}">
-                <button type="button" class="btn-basic btn-block btn-lg py-3 rounded">Hier, quand je me brossais les dents
-                </button>
-            </a>
-            </label>
-        </div>
+    <div class="container d-flex justify-content-center flex-row my-5 text-center">
+        <h4 class="white rounded align-self-center">Il reliera les régions pyrénéennes d’Espagne et France avec l’Europe du Nord et
+            l’Europe Centrale (Espagne - France - Andorre).</h4>
+        <div class="text-center">
+        <img class="img quest3map" th:src="@{/images/mapquestion3.png}">
+    </div>
+    </div>
+    <div class="text-center my-5">
+        <a th:href="@{/question4}">
+            <button type="button" class="btn btn-primary center-block">QUESTION SUIVANTE</button>
+        </a>
     </div>
     </div>
     <div class="wave wave1"></div>
@@ -41,8 +34,6 @@
     <div class="wave wave3"></div>
     <div class="wave wave4"></div>
 </section>
-
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -52,6 +43,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
 </body>
 </html>
