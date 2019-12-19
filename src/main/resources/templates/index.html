@@ -7,46 +7,75 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <title>Accueil</title>
     <meta content="width=device-width, user-scalable=no" name="viewport">
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/question.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/projet.css}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+=======
+    <link th:href="@{/css/index.css}" href="../static/css/index.css" rel="stylesheet">
+>>>>>>> 999bce3c4e4688a0e0a15829930ea18a9923eb4c
 </head>
 <body>
-<div class="medias">
-    <ul class="social-media">
-        <li><a href="#">
-            <ion-icon class="icon-inner" src="../static/images/_ionicons_svg_logo-facebook.svg"></ion-icon>
-        </a></li>
-        <li><a href="#">
-            <ion-icon class="icon-inner" src="../static/images/_ionicons_svg_logo-instagram.svg"></ion-icon>
-        </a></li>
-    </ul>
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Abonnez-vous à notre Newsletter
+                Tous les mois suivez l'avancée de nos projets dans votre boite de réception !</p>
+                <label>Email :</label>
+                <input type="email">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
 </div>
-<header>
-    <h1>Accueil</h1>
-    <ul class="nav justify-content-around">
-        <li class="nav-item">
-            <a class="nav-link" href="#">Accueil</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Quizz</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Projet</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">À propos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Villes</a>
-        </li>
-    </ul>
-    <div class="divider"></div>
-</header>
+<div th:fragment="fragment-header" class="header">
+    <div class="medias">
+        <ul class="social-media">
+            <li><a href="#">
+                <ion-icon class="icon-inner" th:src="@{/images/_ionicons_svg_logo-facebook.svg}" src="../static/images/_ionicons_svg_logo-facebook.svg"></ion-icon>
+            </a></li>
+            <li><a href="#">
+                <ion-icon class="icon-inner" th:src="@{/images/_ionicons_svg_logo-instagram.svg}" src="../static/images/_ionicons_svg_logo-instagram.svg"></ion-icon>
+            </a></li>
+        </ul>
+    </div>
+    <header>
+        <h1>Accueil</h1>
+        <ul class="nav justify-content-around">
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/}" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/question1}" href="#">Quizz</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/projet}" href="#">Projet</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/a-propos}" href="#">À propos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/}" href="#">Villes</a>
+            </li>
+        </ul>
+        <div class="divider"></div>
+    </header>
+</div>
 <div class="content">
-    <img class="img" th:src="@{th:}">
+    <img class="img" th:src="@{/images/IMG_1651-e1470987244585.jpg}" src="../static/images/IMG_1651-e1470987244585.jpg">
     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
         et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -69,29 +98,29 @@
 <div class="medias">
     <ul class="social-media">
         <li><a href="#">
-            <ion-icon class="icon-inner" src="../static/images/_ionicons_svg_logo-facebook.svg"></ion-icon>
+            <ion-icon class="icon-inner" th:src="@{/images/_ionicons_svg_logo-facebook.svg}" src="../static/images/_ionicons_svg_logo-facebook.svg"></ion-icon>
         </a></li>
         <li><a href="#">
-            <ion-icon class="icon-inner" src="../static/images/_ionicons_svg_logo-instagram.svg"></ion-icon>
+            <ion-icon class="icon-inner" th:src="@{/images/_ionicons_svg_logo-instagram.svg}" src="../static/images/_ionicons_svg_logo-instagram.svg"></ion-icon>
         </a></li>
     </ul>
 </div>
-<footer>
+<footer th:fragment="fragment-footer">
     <ul class="nav justify-content-around">
         <li class="nav-item">
-            <a class="nav-link" href="#">Accueil</a>
+            <a class="nav-link" th:href="@{/}" href="#">Accueil</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Quizz</a>
+            <a class="nav-link" th:href="@{/question1}" href="#">Quizz</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Projet</a>
+            <a class="nav-link" th:href="@{/projet}" href="#">Projet</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">À propos</a>
+            <a class="nav-link" th:href="@{/a-propos}" href="#">À propos</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Villes</a>
+            <a class="nav-link" th:href="@{/}" href="#">Villes</a>
         </li>
     </ul>
     <div class="divider"></div>
@@ -99,21 +128,22 @@
         <div>
             <span class="signature">
                 Made with
-                <ion-icon name="heart" src="../static/images/_ionicons_svg_md-heart.svg"> </ion-icon>
+                <ion-icon name="heart" th:src="@{/images/_ionicons_svg_md-heart.svg}" src="../static/images/_ionicons_svg_md-heart.svg"> </ion-icon>
                  by iscom & wilder 2019.
             </span>
         </div>
     </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>$('#basicExampleModal').modal('show');</script>
 </footer>
-<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script crossorigin="anonymous"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
