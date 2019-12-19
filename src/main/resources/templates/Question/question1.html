@@ -13,13 +13,13 @@
 </div>
 <div class="container d-flex justify-content-center flow-row mb-5">
     <div class="form-check mx-5">
-        <button type="button" class="btn btn-info">Réponse 1</button>
+        <a th:href="@{/question1-info(answer=${1})}"><button type="button" class="btn btn-info">Réponse 1</button></a>
     </div>
     <div class="form-check mx-5">
-        <button type="button" class="btn btn-info">Réponse 2</button>
+        <a th:href="@{/question1-info(answer=${0})}"><button type="button" class="btn btn-info">Réponse 2</button></a>
     </div>
     <div class="form-check mx-5">
-        <button type="button" class="btn btn-info">Réponse 3</button>
+        <a th:href="@{/question1-info(answer=${0})}"><button type="button" class="btn btn-info">Réponse 3</button></a>
         </label>
     </div>
 </div>
