@@ -6,29 +6,26 @@
     <meta content="width=device-width, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" th:href="@{/css/home-instructor.css}">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/question.css}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="container d-flex justify-content-center flow-column my-5">
-    <h1>Question 2 ?</h1>
+    <h1 class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit ? </h1>
 </div>
 <div class="container d-flex justify-content-center flow-row mb-5">
     <div class="form-check mx-5">
-        <button type="button" class="btn btn-info">Réponse 1</button>
+        <a th:href="@{/question2-info(answer=${0})}"><button type="button" class="btn btn-info">Lorem ipsum dolor sit amet</button></a>
     </div>
     <div class="form-check mx-5">
-        <button type="button" class="btn btn-info">Réponse 2</button>
+        <a th:href="@{/question2-info(answer=${0})}"><button type="button" class="btn btn-info">Lorem ipsum dolor sit amet</button></a>
     </div>
     <div class="form-check mx-5">
-        <button type="button" class="btn btn-info">Réponse 3</button>
+        <a th:href="@{/question2-info(answer=${1})}"><button type="button" class="btn btn-info">Lorem ipsum dolor sit amet</button></a>
         </label>
     </div>
-</div>
-<div class="text-center my-5">
-    <button type="button" class="btn btn-primary center-block">VALIDER</button>
 </div>
 </div>
 
