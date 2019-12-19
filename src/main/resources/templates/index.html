@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <title>Accueil</title>
     <meta content="width=device-width, user-scalable=no" name="viewport">
-    <link href="../static/css/index.css" rel="stylesheet">
+    <link th:href="@{/css/index.css}" href="../static/css/index.css" rel="stylesheet">
 </head>
 <body>
 <!-- Modal -->
@@ -21,6 +21,8 @@
                 </button>
             </div>
             <div class="modal-body">
+                <p>Abonnez-vous à notre Newsletter
+                Tous les mois suivez l'avancée de nos projets dans votre boite de réception !</p>
                 <label>Email :</label>
                 <input type="email">
             </div>
@@ -35,10 +37,10 @@
     <div class="medias">
         <ul class="social-media">
             <li><a href="#">
-                <ion-icon class="icon-inner" src="../static/images/_ionicons_svg_logo-facebook.svg"></ion-icon>
+                <ion-icon class="icon-inner" th:src="@{/images/_ionicons_svg_logo-facebook.svg}" src="../static/images/_ionicons_svg_logo-facebook.svg"></ion-icon>
             </a></li>
             <li><a href="#">
-                <ion-icon class="icon-inner" src="../static/images/_ionicons_svg_logo-instagram.svg"></ion-icon>
+                <ion-icon class="icon-inner" th:src="@{/images/_ionicons_svg_logo-instagram.svg}" src="../static/images/_ionicons_svg_logo-instagram.svg"></ion-icon>
             </a></li>
         </ul>
     </div>
@@ -65,7 +67,7 @@
     </header>
 </div>
 <div class="content">
-    <img class="img" src="../static/images/IMG_1651-e1470987244585.jpg">
+    <img class="img" th:src="@{/images/IMG_1651-e1470987244585.jpg}" src="../static/images/IMG_1651-e1470987244585.jpg">
     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
         et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -88,10 +90,10 @@
 <div class="medias">
     <ul class="social-media">
         <li><a href="#">
-            <ion-icon class="icon-inner" src="../static/images/_ionicons_svg_logo-facebook.svg"></ion-icon>
+            <ion-icon class="icon-inner" th:src="@{/images/_ionicons_svg_logo-facebook.svg}" src="../static/images/_ionicons_svg_logo-facebook.svg"></ion-icon>
         </a></li>
         <li><a href="#">
-            <ion-icon class="icon-inner" src="../static/images/_ionicons_svg_logo-instagram.svg"></ion-icon>
+            <ion-icon class="icon-inner" th:src="@{/images/_ionicons_svg_logo-instagram.svg}" src="../static/images/_ionicons_svg_logo-instagram.svg"></ion-icon>
         </a></li>
     </ul>
 </div>
@@ -118,7 +120,7 @@
         <div>
             <span class="signature">
                 Made with
-                <ion-icon name="heart" src="../static/images/_ionicons_svg_md-heart.svg"> </ion-icon>
+                <ion-icon name="heart" th:src="@{/images/_ionicons_svg_md-heart.svg}" src="../static/images/_ionicons_svg_md-heart.svg"> </ion-icon>
                  by iscom & wilder 2019.
             </span>
         </div>
