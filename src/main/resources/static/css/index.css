@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../static/fonts/Montserrat-Regular.otf);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #9FAEE5;
+    color: white !important;
+}
+footer {
+    background: #9FAEE5;
+    color: white !important;
+}
+
+.icon-inner {
+    color: white;
+}
+.icon-inner:hover {
+    color: #003399;
+}
+
+a {
+    color: white;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: #003399;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.medias {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul.social-media {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    height: 10em;
+    align-items: center;
+    margin: 0;
+}
+.social-media li {
+    float: right;
+    margin: 0 2em 0 0;
+}
+
+ul.nav.justify-content-around {
+    margin: 0 10em 0 10em !important;
+}
+
+.content {
+    background: #9FAEE5;
+    display: flex;
+}
+
+.text {
+    margin: 2em 2em 2em 0;
+    text-align: justify;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 50%;
+    margin: 2em;
+}
+
+.quizz {
+    margin: 2em;
+}
+
+h3 {
+    margin-bottom: 1em;
+}
+
+p.content-quizz {
+    margin-bottom: 2em;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    background: #9FAEE5;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5em 1em;
+}
+
+button:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+footer {
+    height: 10em;
+    padding-top: 1em;
+}
+
+.signature {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 1em 0;
+}
+
+.divider{
+    display: flex;
+    width:60%;
+    height: 1px;
+    background-color: #ffcc00;
+    margin-left: 20%;
+    margin-top: 1em;
+}
