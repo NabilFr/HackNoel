@@ -217,6 +217,15 @@ p {
     margin: 20px 10px;
 }
 
+.text-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.accueil {
+    margin-top: 1em;
+}
+
 @media (max-width: 1028px) {
 
     #title {
