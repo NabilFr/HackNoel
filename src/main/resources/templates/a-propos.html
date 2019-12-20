@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="fr" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Accueil - Responsable de site</title>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>À propos</title>
     <meta content="width=device-width, user-scalable=no" name="viewport">
-    <link rel="stylesheet" th:href="@{/static/css/home-instructor.css}">
+    <link href="../static/css/apropos.css" rel="stylesheet" th:href="@{/css/apropos.css}">
 </head>
 <body>
+<div class="header" th:include="index.html :: fragment-header"></div>
 
+<footer th:include="index.html :: fragment-footer"></footer>
 </body>
 </html>
