@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Question 1</title>
@@ -9,56 +9,46 @@
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/question.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/wave.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{/css/tubelight.css}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-<section class="wave-section black-bg">
+<section class="wave-section">
     <div class="container d-flex justify-content-center my-5">
-        <ul>
-            <li>V</li>
-            <li>O</li>
-            <li>T</li>
-            <li>R</li>
-            <li>E</li>
-            <li class="space"></li>
-            <li>S</li>
-            <li>C</li>
-            <li>O</li>
-            <li>R</li>
-            <li>E</li>
-            <li class="space"></li>
-            <li>E</li>
-            <li>S</li>
-            <li>T</li>
-            <li class="space"></li>
-            <li>D</li>
-            <li>E</li>
-            <li class="space"></li>
-            <li th:text="${result}"></li>
-            <li class="space"></li>
-            <li>S</li>
-            <li>U</li>
-            <li>R</li>
-            <li class="space"></li>
-            <li>7</li>
-            <li>!</li>
-
-
-        </ul>
-
+        <h1 class="text-center display-4 ">Le projet H2PIYR est complémentaire aux diverses initiatives imposées par
+            l’Union Européenne pour :</h1>
     </div>
-    <div class="container d-flex justify-content-center flex-column mb-5">
+    <div class="bg-transparent container d-flex justify-content-center flex-column mb-5">
+        <div class="bg-transparent form-check my-4 text-center">
+            <a class="text-decoration-none" th:href="@{/question6-info(answer=${1})}">
+                <button type="button" class="btn-basic btn-block btn-lg py-3 rounded">Réduire la dépendance aux
+                    combustibles fossiles et promouvoir des énergies renouvelables
+                </button>
+            </a>
+        </div>
+        <div class="bg-transparent form-check my-4 text-center">
+            <a class="text-decoration-none" th:href="@{/question6-info(answer=${0})}">
+                <button type="button" class="btn-basic btn-block btn-lg py-3 rounded">Pour allumer le feu (RIP Johnny)
+                    et voir sortir la flamme de vos yeux
+                </button>
+            </a>
+        </div>
+        <div class="bg-transparent form-check my-4 text-center">
+            <a class="text-decoration-none" th:href="@{/question6-info(answer=${0})}">
+                <button type="button" class="btn-basic btn-block btn-lg py-3 rounded">Je suis pas venu ici pour
+                    souffrir, OK ?
+                </button>
+            </a>
+            </label>
+        </div>
     </div>
-    <div class="text-center my-5">
-        <a th:href="@{/index}">
-            <button type="button" class="btn btn-primary center-block">RETOURNER A L'ACCUEIL</button>
-        </a>
+    </div>
     <div class="wave wave1"></div>
     <div class="wave wave2"></div>
     <div class="wave wave3"></div>
     <div class="wave wave4"></div>
 </section>
+
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -68,5 +58,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
 </body>
 </html>

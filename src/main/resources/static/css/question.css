@@ -1,0 +1,38 @@
+body {
+    width: 100%;
+    /*background-image: url('../images/84-desktop-wallpaper.png');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.loader {
+    position: absolute;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.display-3, .display-4 {
+    color: #FFCC00;
+}
+
+.btn-basic {
+    transition: 0.5s;
+}
+.btn-basic:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.quest3map {
+    width: 80%;
+}
+
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+}

@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Question 1</title>
@@ -13,21 +13,29 @@
 </head>
 <body>
 <section class="wave-section">
-    <div class="container d-flex justify-content-center flow-column my-5">
-        <h1 class="text-center display-4">C’est quoi H2PIYR ?</h1>
+    <div class="container d-flex justify-content-center my-5">
+            <h1 class="text-center display-4">Quel est l’objectif de ce projet ?</h1>
     </div>
-    <div class="container d-flex justify-content-center flow-column my-5">
-        <h4 class="white rounded">Le projet de «Corridor Hydrogène pour les régions pyrénéennes» va développer
-            un banc d’essai à taille réelle d’un
-            corridor transfrontalier de <span class="highlight">stations de distribution d’hydrogène pour véhicules automobiles</span> qui reliera les
-            régions pyrénéennes d’Espagne et France avec l’Europe du Nord et l’Europe Centrale, là où le développement
-            d’infrastructures associées à ce type de <span class="highlight">mobilité décarbonée</span> est le plus avancé.</h4>
-    </div>
-    <div class="text-center my-5">
-        <a th:href="@{/question2}">
-            <button type="button" class="btn btn-primary center-block">QUESTION SUIVANTE</button>
-        </a>
-    </div>
+    <div class="container d-flex justify-content-center flex-column mb-5">
+        <div class=" form-check my-4 text-center">
+            <a class="text-decoration-none" th:href="@{/question7-info(answer=${0})}">
+                <button type="button" class="btn-basic btn-block btn-lg py-3 rounded">Pour parvenir à une théorie de gravitation quantique, et réunir les deux grands piliers de la physique, relativité générale d’Einstein de l’espace-temps et la mécanique quantique qui décrit les particules élémentaires
+                </button>
+            </a>
+        </div>
+        <div class="bg-transparent form-check my-4 text-center">
+            <a class="text-decoration-none" th:href="@{/question7-info(answer=${1})}">
+                <button type="button" class="btn-basic btn-block btn-lg py-3 rounded">Réduire les émissions associées aux véhicules traditionnels
+                </button>
+            </a>
+        </div>
+        <div class="bg-transparent form-check my-4 text-center ">
+            <a class="text-decoration-none" th:href="@{/question7-info(answer=${0})}">
+                <button type="button" class="btn-basic btn-block btn-lg py-3 rounded">Répondre à un quizz sympa
+                </button>
+            </a>
+            </label>
+        </div>
     </div>
     <div class="wave wave1"></div>
     <div class="wave wave2"></div>
