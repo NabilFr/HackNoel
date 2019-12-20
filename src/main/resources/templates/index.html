@@ -8,6 +8,7 @@
     <title>Accueil</title>
     <meta content="width=device-width, user-scalable=no" name="viewport">
     <link href="../static/css/index.css" rel="stylesheet" th:href="@{/css/index.css}">
+    <link rel="stylesheet" th:href="@{/css/header-video.css}">
 </head>
 <body>
 <div class="header" th:fragment="fragment-header">
@@ -45,9 +46,20 @@
         <div class="divider"></div>
     </header>
 </div>
-<div class="content">
-    <img alt="image" class="img" src="../static/images/PlaquetteH2day.jpg" th:src="@{/images/PlaquetteH2day.jpg}">
-    <p class="text">L’hydrogène c’est pour <span id="maintenant">demain</span>, maintenant.</span></p>
+<!-------------------HEADER VIDEO------------------------->
+<div class="header-video">
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source th:src="@{images/video.mp4}" type="video/mp4">
+    </video>
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <h1 class="display-3 & title-header-video">Projet H2PIYR</h1>
+                <p class="lead mb-0">L'hydrogènà notre service</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <img alt="logo" class="logo" src="../static/images/LogoH2PiyR.jpg" th:src="@{/images/LogoH2PiyR.jpg}">
