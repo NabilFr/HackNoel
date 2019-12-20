@@ -137,5 +137,5 @@ ul li:nth-child(18)
 }
 
 .black-bg {
-    background-color: #04024b;
+    background: linear-gradient(#04024b, #5c7ae5);
 }
