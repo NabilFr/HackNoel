@@ -13,6 +13,7 @@ public class QuestionController {
 
     @GetMapping("/question1")
     public String question1() {
+        question.setResult(0);
         return "Question/question1";
     }
 
@@ -88,15 +89,10 @@ public class QuestionController {
         return "Question/question7-info";
     }
 
-    @GetMapping("/question8")
-    public String question8() {
-        return "question8";
-    }
-
-    @GetMapping("/question8-info")
-    public String question8Info(@RequestParam int answer) {
+    @GetMapping("/question8test")
+    public String question8test(@RequestParam int answer) {
         question.setResult(question.getResult() + answer);
-        return "Question/question8-info";
+        return "/question8";
     }
 
     @GetMapping("/result")
@@ -110,5 +106,4 @@ public class QuestionController {
         out.addAttribute("result", question.getResult());
         return "Question/questionInfoBis";
     }
-
 }

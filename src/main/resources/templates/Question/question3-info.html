@@ -1,47 +1,43 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Question 1</title>
-    <meta content="width=device-width, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{/css/question.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{/css/wave.css}">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/2.0.0/css/froala_blocks.min.css">
+    <link rel="stylesheet" th:href="@{/css/projet.css}">
+    <title>Hello, world!</title>
 </head>
-<body>
-<section class="wave-section">
-    <div class="container d-flex justify-content-center flex-column my-5">
-        <h1 class="text-center display-4">Quel sera son tracé ?</h1>
+<body class="grey">
+<section class="fdb-block">
+    <div class="col-fill-right" style="background-image: url(images/mapquestion3.png);">
     </div>
-    <div class="container d-flex justify-content-center flex-row my-5 text-center">
-        <h4 class="white rounded align-self-center">Il reliera les régions <span class="highlight">pyrénéennes d’Espagne et France</span> avec <span class="highlight">l’Europe du Nord et
-            l’Europe Centrale</span> (Espagne - France - Andorre).</h4>
-        <div class="text-center">
-        <img class="img quest3map" th:src="@{/images/mapquestion3.png}">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md-5 text-center" >
+                <h1>Quel sera son tracé ? </h1>
+                <p class="lead">Il reliera les régions pyrénéennes d’Espagne et France avec l’Europe du Nord et l’Europe Centrale (Espagne - France - Andorre)..</p>
+                <div class="text-center my-3">
+                    <a th:href="@{/question4}">
+                        <button type="button" class="btn btn-primary center-block">QUESTION SUIVANTE</button>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-    <div class="text-center my-5">
-        <a th:href="@{/question4}">
-            <button type="button" class="btn btn-primary center-block">QUESTION SUIVANTE</button>
-        </a>
-    </div>
-    </div>
-    <div class="wave wave1"></div>
-    <div class="wave wave2"></div>
-    <div class="wave wave3"></div>
-    <div class="wave wave4"></div>
 </section>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </body>
 </html>
