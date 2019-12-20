@@ -90,7 +90,7 @@ public class QuestionController {
 
     @GetMapping("/question8")
     public String question8() {
-        return "Question/question8";
+        return "question8";
     }
 
     @GetMapping("/question8-info")
@@ -102,7 +102,7 @@ public class QuestionController {
     @GetMapping("/result")
     public String result(Model out) {
         out.addAttribute("result", question.getResult());
-        return "Question/result";
+        return "questionInfoBis";
     }
 
 }
