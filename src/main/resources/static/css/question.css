@@ -17,7 +17,7 @@ a {
 }
 
 .display-3, .display-4 {
-    color: #007bff;
+    color: #FFCC00;
 }
 
 .btn-basic {
@@ -30,4 +30,9 @@ a {
 
 .quest3map {
     width: 80%;
+}
+
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
 }
