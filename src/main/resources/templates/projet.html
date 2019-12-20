@@ -8,13 +8,14 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="../static/css/index.css" rel="stylesheet" th:href="@{/css/index.css}">
+
     <link rel="stylesheet" th:href="@{/css/projet.css}">
+    <link href="../static/css/index.css" rel="stylesheet" th:href="@{/css/index.css}">
     <title>Hello, world!</title>
 </head>
 <body>
 
-<div th:replace=" indexWithModal :: fragment-header">...</div>
+<div th:replace=" index :: fragment-header">...</div>
 
 <section class="colored-section" id="title">
 
@@ -135,7 +136,7 @@
 
 </section>
 
-<div th:replace=" indexWithModal :: fragment-footer">...</div>
+<div th:replace=" index :: fragment-footer">...</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

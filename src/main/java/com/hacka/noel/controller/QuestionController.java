@@ -13,6 +13,7 @@ public class QuestionController {
 
     @GetMapping("/question1")
     public String question1() {
+        question.setResult(0);
         return "Question/question1";
     }
 
