@@ -100,10 +100,4 @@ public class QuestionController {
         out.addAttribute("result", question.getResult());
         return "Question/result";
     }
-
-    @GetMapping("/questionBis")
-    public String result2(Model out) {
-        out.addAttribute("result", question.getResult());
-        return "Question/questionInfoBis";
-    }
 }
