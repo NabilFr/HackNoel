@@ -13,6 +13,15 @@ p {
 }
 
 /*Margin articles*/
+
+.contact-info {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.button-sub {
+    padding-bottom: 20px;
+}
 .question-photo {
     padding-bottom: 30px;
     padding-top: 30px;

@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/2.0.0/css/froala_blocks.min.css">
     <link rel="stylesheet" th:href="@{/css/projet.css}">
+
     <link rel="stylesheet" type="text/css" th:href="@{/css/wave.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/question.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/header-video.css}">
+
     <title>Hello, world!</title>
 </head>
 <body>
@@ -55,6 +58,30 @@
         <div class="divider"></div>
     </header>
 </div>
+
+
+
+
+
+
+
+
+
+
+<header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source th:src="@{images/video.mp4}" type="video/mp4">
+    </video>
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <h1 class="display-3">Projet H2PIYR</h1>
+                <p class="lead mb-0">L'hydrogènà notre service</p>
+            </div>
+        </div>
+    </div>
+</header>
 
 <section class="fdb-block & question-photo">
     <div class="container">
@@ -99,5 +126,8 @@
         </div>
     </div>
 </section>
+
+<script th:src="@{js/myscripts.js}"></script>
+
 </body>
 </html>

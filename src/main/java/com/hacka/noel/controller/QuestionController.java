@@ -109,6 +109,15 @@ public class QuestionController {
     public String result(Model out) {
         out.addAttribute("result", question.getResult());
         return "Question/result";
+<<<<<<< HEAD
+=======
+    }
+
+    @GetMapping("/questionBis")
+    public String result2(Model out) {
+        out.addAttribute("result", question.getResult());
+        return "Question/questionInfoBis";
+>>>>>>> e60e9bafb865cc167d454efa547720190f62985d
     }
 
 }
