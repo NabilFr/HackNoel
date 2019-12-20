@@ -25,7 +25,7 @@
         </ul>
     </div>
     <header>
-        <h1 class="title-logo">H2PiyR</h1>
+        <h1 class="title-logo">H2piyR</h1>
         <ul class="nav justify-content-around">
             <li class="nav-item">
                 <a class="nav-link" href="#" th:href="@{/index}">Accueil</a>
@@ -40,7 +40,7 @@
                 <a class="nav-link" href="#" th:href="@{/a-propos}">À propos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" th:href="@{/villes}">Villes</a>
+                <a class="nav-link" href="#" th:href="@{/villes}">Team</a>
             </li>
         </ul>
         <div class="divider"></div>
@@ -49,13 +49,13 @@
 <!-------------------HEADER VIDEO------------------------->
 <div class="header-video">
     <div class="overlay"></div>
-    <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
-        <source src="" th:src="@{images/video.mp4}" type="video/mp4">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source th:src="@{images/Header.mp4}" type="video/mp4" src="">
     </video>
     <div class="container h-100">
         <div class="d-flex h-100 text-center align-items-center">
             <div class="w-100 text-white">
-                <h1 class="display-3 & title-header-video">Projet H2PIYR</h1>
+                <h1 class="display-3 & title-header-video">Projet H2piyR</h1>
                 <p class="lead mb-0">L'hydrogène notre service</p>
             </div>
         </div>
@@ -69,7 +69,7 @@
         de serre, transport durable décarboné… Autant de termes un peu (beaucoup) flous. Alors pour que le projet H2piyR
         n’ait plus de secret pour vous, ce quiz de 7 questions vous a été concocté. À vous de jouer !</p>
     <div class="button">
-        <button>Commencer le jeu interactif</button>
+        <button th:href="@{/question1}">Commencer le jeu interactif</button>
     </div>
 </div>
 <div class="carte">
@@ -132,7 +132,7 @@
             <a class="nav-link" href="#" th:href="@{/a-propos}">À propos</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" th:href="@{/}">Villes</a>
+            <a class="nav-link" href="#" th:href="@{/team}">Team</a>
         </li>
     </ul>
     <div class="divider"></div>

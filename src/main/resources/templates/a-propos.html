@@ -10,7 +10,7 @@
     <link href="../static/css/apropos.css" rel="stylesheet" th:href="@{/css/apropos.css}">
 </head>
 <body>
-<div class="header" th:include="index.html :: fragment-header"></div>
+<div class="header" th:replace="index :: fragment-header"></div>
 <h3>Les partenaires :</h3>
 <div class="partenaires">
     <a href="http://www.calvera.es/fr/"><img alt="image" class="img" src="../static/images/ayuntamiento-de-huesca.jpg" th:src="@{/images/ayuntamiento-de-huesca.jpg}"></a>
@@ -54,6 +54,6 @@
         <button>Envoyer</button>
     </form>
 </div>
-<footer th:include="index.html :: fragment-footer"></footer>
+<footer th:replace="index :: fragment-footer"></footer>
 </body>
 </html>
