@@ -42,4 +42,9 @@ public class MenuController {
     public String villes() {
         return "villes";
     }
+
+    @GetMapping("/contact")
+    public String contact() {
+        return "contact";
+    }
 }
