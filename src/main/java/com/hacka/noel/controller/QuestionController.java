@@ -13,6 +13,7 @@ public class QuestionController {
 
     @GetMapping("/question1")
     public String question1() {
+        question.setResult(0);
         return "Question/question1";
     }
 
@@ -88,17 +89,6 @@ public class QuestionController {
         return "Question/question7-info";
     }
 
-    @GetMapping("/question8")
-    public String question8() {
-        return "question8";
-    }
-
-    @GetMapping("/question8-info")
-    public String question8Info(@RequestParam int answer) {
-        question.setResult(question.getResult() + answer);
-        return "Question/question8-info";
-    }
-
     @GetMapping("/question8test")
     public String question8test(@RequestParam int answer) {
         question.setResult(question.getResult() + answer);
@@ -109,6 +99,7 @@ public class QuestionController {
     public String result(Model out) {
         out.addAttribute("result", question.getResult());
         return "Question/result";
+<<<<<<< HEAD
     }
 
     @GetMapping("/questionBis")
@@ -117,4 +108,6 @@ public class QuestionController {
         return "Question/questionInfoBis";
     }
 
+=======
+>>>>>>> e074c52506d1ec510dfc03103fd7bd249d2fdfd5
 }
