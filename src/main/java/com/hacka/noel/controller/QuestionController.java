@@ -99,4 +99,5 @@ public class QuestionController {
     public String result(Model out) {
         out.addAttribute("result", question.getResult());
         return "Question/result";
+    }
 }

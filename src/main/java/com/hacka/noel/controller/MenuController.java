@@ -33,9 +33,9 @@ public class MenuController {
         return "a-propos";
     }
 
-    @GetMapping("/villes")
-    public String villes() {
-        return "villes";
+    @GetMapping("/team")
+    public String team() {
+        return "team";
     }
 
 }

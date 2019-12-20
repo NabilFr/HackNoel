@@ -40,7 +40,7 @@
                 <a class="nav-link" href="#" th:href="@{/a-propos}">À propos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" th:href="@{/villes}">Villes</a>
+                <a class="nav-link" href="#" th:href="@{/villes}">Team</a>
             </li>
         </ul>
         <div class="divider"></div>
@@ -50,7 +50,7 @@
 <div class="header-video">
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source th:src="@{images/video.mp4}" type="video/mp4" src="">
+        <source th:src="@{images/Header.mp4}" type="video/mp4" src="">
     </video>
     <div class="container h-100">
         <div class="d-flex h-100 text-center align-items-center">
@@ -71,7 +71,7 @@
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
         pariatur.</p>
     <div class="button">
-        <button>Commencer le jeu interactif</button>
+        <button th:href="@{/question1}">Commencer le jeu interactif</button>
     </div>
 </div>
 <div class="carte">
@@ -134,7 +134,7 @@
             <a class="nav-link" href="#" th:href="@{/a-propos}">À propos</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#" th:href="@{/}">Villes</a>
+            <a class="nav-link" href="#" th:href="@{/team}">Team</a>
         </li>
     </ul>
     <div class="divider"></div>
