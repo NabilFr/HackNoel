@@ -37,6 +37,7 @@ public class MenuController {
     public String aPropos() {
         return "a-propos";
     }
+
     @GetMapping("/villes")
     public String villes() {
         return "villes";
