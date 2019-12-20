@@ -11,7 +11,39 @@
 </head>
 <body>
 <div class="header" th:include="index.html :: fragment-header"></div>
-
+<h3>Les partenaires :</h3>
+<div class="partenaires">
+    <a href="http://www.calvera.es/fr/"><img alt="image" class="img" src="../static/images/ayuntamiento-de-huesca.jpg" th:src="@{/images/ayuntamiento-de-huesca.jpg}"></a>
+    <a href="https://www.edf.fr/"><img alt="image" class="img" src="../static/images/ayuntamiento-de-jaca.jpg" th:src="@{/images/ayuntamiento-de-jaca.jpg}"></a>
+    <a href="https://www.zoilorios.com/"><img alt="image" class="img" src="../static/images/calvera-maquinaria-e-instalaciones.jpg" th:src="@{/images/calvera-maquinaria-e-instalaciones.jpg}"></a>
+    <img alt="image" class="img" src="../static/images/EDF-logotipo.jpg" th:src="@{/images/EDF-logotipo.jpg}">
+    <a href="http://www.calvera.es/fr/"><img alt="image" class="img" src="../static/images/grupo-zoilo-rios.jpg" th:src="@{/images/grupo-zoilo-rios.jpg}"></a>
+    <a href="http://www.calvera.es/fr/"><img alt="image" class="img" src="../static/images/logo-h2-impulsion.jpg" th:src="@{/images/logo-h2-impulsion.jpg}"></a>
+    <a href="http://www.calvera.es/fr/"><img alt="image" class="img" src="../static/images/logo_feda_q.jpg" th:src="@{/images/logo_feda_q.jpg}"></a>
+    <a href="http://www.calvera.es/fr/"><img alt="image" class="img" src="../static/images/logotipo-FHA-socio.jpg" th:src="@{/images/logotipo-FHA-socio.jpg}"></a>
+</div>
+<h3 class="contact">Nous contacter:</h3>
+<div class="formulaire">
+    <form>
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" class="form-control" id="nom" placeholder="Nom">
+        </div>
+        <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Addresse email :</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="question">Question :</label>
+            <textarea type="text" class="form-control" id="question" aria-describedby="emailHelp" placeholder="Question"></textarea>
+        </div>
+        <button>Envoyer</button>
+    </form>
+</div>
 <footer th:include="index.html :: fragment-footer"></footer>
 </body>
 </html>
