@@ -99,10 +99,16 @@ public class QuestionController {
         return "Question/question8-info";
     }
 
+    @GetMapping("/question8test")
+    public String question8test(@RequestParam int answer) {
+        question.setResult(question.getResult() + answer);
+        return "/question8";
+    }
+
     @GetMapping("/result")
     public String result(Model out) {
         out.addAttribute("result", question.getResult());
-        return "questionInfoBis";
+        return "Question/result";
     }
 
 }

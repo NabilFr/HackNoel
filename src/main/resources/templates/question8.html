@@ -11,9 +11,50 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/2.0.0/css/froala_blocks.min.css">
     <link rel="stylesheet" th:href="@{/css/projet.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/wave.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/question.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <title>Hello, world!</title>
 </head>
 <body>
+<div class="header" th:fragment="fragment-header">
+    <div class="medias">
+        <ul class="social-media">
+            <li><a href="#">
+                <ion-icon class="icon-inner" src="../static/images/facebook.svg"
+                          th:src="@{/images/facebook.svg}"></ion-icon>
+            </a></li>
+            <li><a href="#">
+                <ion-icon class="icon-inner" src="../static/images/instagram.svg"
+                          th:src="@{/images/instagram.svg}"></ion-icon>
+            </a></li>
+        </ul>
+    </div>
+    <header>
+        <h1>H2PiyR</h1>
+        <ul class="nav justify-content-around">
+            <li class="nav-item">
+                <a class="nav-link" href="#" th:href="@{/}">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" th:href="@{/question1}">Quizz</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" th:href="@{/projet}">Projet</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" th:href="@{/a-propos}">À propos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" th:href="@{/villes}">Villes</a>
+            </li>
+        </ul>
+        <div class="divider"></div>
+    </header>
+</div>
 
 <section class="fdb-block & question-photo">
     <div class="container">
@@ -22,7 +63,7 @@
                 <img alt="image" class="img-fluid" src="./images/water.jpg">
             </div>
             <div class="col-12 col-md-6 col-lg-5 ml-md-auto text-left">
-                <h1>Froala Blocks</h1>
+                <h1>C’est quoi H2PIYR ?</h1>
             </div>
         </div>
     </div>
@@ -34,25 +75,29 @@
     <div class="container">
         <div class="row text-center justify-content-center mt-5">
             <div class="col-12 col-sm-4 col-xl-3 m-md-auto">
+                <h4>L’époque qui précède l’âge de bronze</h4>
                 <img alt="image" class="fdb-icon" src="images/one.svg">
-                <h4>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</h4>
-                <p><a class="btn btn-secondary mt-4" href="https://www.froala.com">Download</a></p>
+
+
             </div>
 
             <div class="col-12 col-sm-4 col-xl-3 m-auto pt-4 pt-sm-0">
+                <h4>Un projet de « Corridor Hydrogène pour
+                    les régions pyrénéennes »</h4>
+
                 <img alt="image" class="fdb-icon" src="images/two.svg">
-                <h4>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large ocean.</h4>
-                <p><a class="btn btn-secondary mt-4" href="https://www.froala.com">Download</a></p>
+
             </div>
 
             <div class="col-12 col-sm-4 col-xl-3 m-auto pt-4 pt-sm-0">
+                <h4>Un symbole chimique du tableau
+                    périodique des éléments</h4>
                 <img alt="image" class="fdb-icon" src="images/three.svg">
-                <h4>A small river named Duden flows by their place and supplies it with the necessary regelialia</h4>
-                <p><a class="btn btn-secondary mt-4" href="https://www.froala.com">Download</a></p>
+
+
             </div>
         </div>
     </div>
 </section>
-
 </body>
 </html>
