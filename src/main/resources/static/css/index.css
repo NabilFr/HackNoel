@@ -36,6 +36,9 @@ a {
     color: white;
 }
 
+.demain {
+    text-decoration: line-through;
+}
 .medias {
     display: flex;
     justify-content: flex-end;

@@ -25,6 +25,9 @@ public class QuestionController {
 
     @GetMapping("/question2")
     public String question2() {
+
+
+
         return "Question/question2";
     }
 
