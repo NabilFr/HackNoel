@@ -8,43 +8,20 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" th:href="@{/css/projet.css}">
+    <link href="../static/css/index.css" rel="stylesheet" th:href="@{/css/index.css}">
     <title>Hello, world!</title>
 </head>
 <body>
 
+<div th:replace=" index :: fragment-header">...</div>
+
 <section class="colored-section" id="title">
 
+    <!-- Nav Bar -->
+
     <div class="container-fluid">
-
-        <!-- Nav Bar -->
-
-        <nav class="navbar navbar-expand-lg navbar-dark">
-
-            <a class="navbar-brand" href="">H2PIYR</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#footer">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ancre-button">Découvrir</a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
-
-
         <!-- Title -->
         <div class="row">
 
@@ -145,7 +122,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6">
-                <img class="title-image" th:src="@{https://media3.giphy.com/media/l0Iyb2pEevoDThkFW/giphy.gif}" alt="iphone-mockup">
+                <img class="title-image2" th:src="@{images/mapquestion3.png}" alt="iphone-mockup">
             </div>
 
             <div class="col-lg-6">
@@ -158,6 +135,8 @@
     </div>
 
 </section>
+
+<div th:replace=" index :: fragment-footer">...</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

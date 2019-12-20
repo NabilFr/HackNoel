@@ -8,6 +8,7 @@
     <title>Accueil</title>
     <meta content="width=device-width, user-scalable=no" name="viewport">
     <link href="../static/css/index.css" rel="stylesheet" th:href="@{/css/index.css}">
+    <link rel="stylesheet" th:href="@{/css/header-video.css}">
 </head>
 <body>
 <!-- Modal -->
@@ -28,50 +29,27 @@
                 <input type="email">
             </div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
-                <button class="btn btn-primary" type="button">Save changes</button>
+                <button class="btn btn-secondary" data-dismiss="modal" type="button">Fermer</button>
+                <button class="btn btn-primary" type="button">Envoyer</button>
             </div>
         </div>
     </div>
 </div>
-<div class="header" th:fragment="fragment-header">
-    <div class="medias">
-        <ul class="social-media">
-            <li><a href="#">
-                <ion-icon class="icon-inner" src="../static/images/facebook.svg"
-                          th:src="@{/static/images/facebook.svg}"></ion-icon>
-            </a></li>
-            <li><a href="#">
-                <ion-icon class="icon-inner" src="../static/images/instagram.svg"
-                          th:src="@{/static/images/instagram.svg}"></ion-icon>
-            </a></li>
-        </ul>
+<div th:replace=" index :: fragment-header">...</div>
+<!-------------------HEADER VIDEO------------------------->
+<div class="header-video">
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source th:src="@{images/video.mp4}" type="video/mp4">
+    </video>
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <h1 class="display-3 & title-header-video">Projet H2PIYR</h1>
+                <p class="lead mb-0">L'hydrogène notre service</p>
+            </div>
+        </div>
     </div>
-    <header>
-        <h1>H2PiyR</h1>
-        <ul class="nav justify-content-around">
-            <li class="nav-item">
-                <a class="nav-link" href="#" th:href="@{/}">Accueil</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" th:href="@{/question1}">Quizz</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" th:href="@{/projet}">Projet</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" th:href="@{/a-propos}">À propos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" th:href="@{/villes}">Villes</a>
-            </li>
-        </ul>
-        <div class="divider"></div>
-    </header>
-</div>
-<div class="content">
-    <img alt="image" class="img" src="../static/images/PlaquetteH2day.jpg" th:src="@{/images/PlaquetteH2day.jpg}">
-    <p class="text">L’hydrogène c’est pour <span id="maintenant">demain</span>, maintenant.</span></p>
 </div>
 
 <img alt="logo" class="logo" src="../static/images/LogoH2PiyR.jpg" th:src="@{/images/LogoH2PiyR.jpg}">
@@ -119,58 +97,6 @@
     </a>
     <img alt="map" src="../static/images/carte.png" th:src="@{/images/carte1.png}">
 </div>
-<div class="medias">
-    <ul class="social-media">
-        <li><a href="#">
-            <ion-icon class="icon-inner" src="../static/images/facebook.svg"
-                      th:src="@{/static/images/facebook.svg}"></ion-icon>
-        </a></li>
-        <li><a href="#">
-            <ion-icon class="icon-inner" src="../static/images/instagram.svg"
-                      th:src="@{/static/images/instagram.svg}"></ion-icon>
-        </a></li>
-    </ul>
-</div>
-<footer th:fragment="fragment-footer">
-    <ul class="nav justify-content-around">
-        <li class="nav-item">
-            <a class="nav-link" href="#" th:href="@{/}">Accueil</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" th:href="@{/question1}">Quizz</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" th:href="@{/projet}">Projet</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" th:href="@{/a-propos}">À propos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" th:href="@{/}">Villes</a>
-        </li>
-    </ul>
-    <div class="divider"></div>
-    <div class="col-md-12">
-        <div>
-            <span class="signature">
-                Made with
-                <ion-icon id="heart" name="heart" src="../static/images/heart.svg"
-                          th:src="@{/static/images/heart.svg}"> </ion-icon>
-                 by ISCOM & WILDER 2019.
-            </span>
-        </div>
-    </div>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script crossorigin="anonymous"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script crossorigin="anonymous"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script crossorigin="anonymous"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script>$('#basicExampleModal').modal('show');</script>
-</footer>
+<div th:replace=" index :: fragment-footer">...</div>
 </body>
 </html>

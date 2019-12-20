@@ -28,17 +28,14 @@ public class MenuController {
         return "projet";
     }
 
-    @GetMapping("/glossaire")
-    public String glossaire() {
-        return "glossaire";
-    }
-
     @GetMapping("/a-propos")
     public String aPropos() {
         return "a-propos";
     }
+
     @GetMapping("/villes")
     public String villes() {
         return "villes";
     }
+
 }
