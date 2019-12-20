@@ -12,6 +12,14 @@ p {
 }
 
 /*Margin articles*/
+.question-photo {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.reponses-questions {
+    padding-top: 0;
+}
 
 .electron {
     padding-left: 50px;
