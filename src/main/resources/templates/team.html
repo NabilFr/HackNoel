@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Accueil</title>
+    <meta content="width=device-width, user-scalable=no" name="viewport">
+    <link rel="stylesheet" th:href="@{/css/projet.css}">
+    <link href="../static/css/index.css" rel="stylesheet" th:href="@{/css/index.css}">
+</head>
+<body>
+
+<div th:replace=" index :: fragment-header">...</div>
+
+<section class="fdb-block team-2 & team">
+    <div class="container">
+        <div class="row text-center justify-content-center">
+            <div class="col-8">
+                <h1>Meet Our Team</h1>
+            </div>
+        </div>
+
+        <div class="row-50"></div>
+
+        <div class="row text-center justify-content-center">
+            <div class="col-sm-3 m-sm-auto">
+                <img alt="image" class="img-fluid rounded-circle" th:src="@{images/lady-img.jpg}">
+
+                <h2>Emma</h2>
+                <p>Founder</p>
+            </div>
+
+            <div class="col-sm-3 m-sm-auto">
+                <img alt="image" class="img-fluid rounded-circle" th:src="@{images/lady-img.jpg}">
+
+                <h2>Nabil</h2>
+                <p>Founder</p>
+            </div>
+
+            <div class="col-sm-3 m-sm-auto">
+                <img alt="image" class="img-fluid rounded-circle" th:src="@{images/lady-img.jpg}">
+
+                <h2>Manon</h2>
+
+                <p>Founder</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fdb-block team-2 & team">
+    <div class="container">
+        <div class="row-50"></div>
+        <div class="row text-center justify-content-center">
+            <div class="col-sm-3 m-sm-auto">
+                <img alt="image" class="img-fluid rounded-circle" th:src="@{images/lady-img.jpg}">
+
+                <h2>Laetitia</h2>
+                <p>Founder</p>
+            </div>
+
+            <div class="col-sm-3 m-sm-auto">
+                <img alt="image" class="img-fluid rounded-circle" th:src="@{images/lady-img.jpg}">
+
+                <h2>Sebastien</h2>
+                <p>Founder</p>
+            </div>
+
+            <div class="col-sm-3 m-sm-auto">
+                <img alt="image" class="img-fluid rounded-circle" th:src="@{images/lady-img.jpg}">
+
+                <h2>Alexandre</h2>
+
+                <p>Founder</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div th:replace=" index :: fragment-footer">...</div>
+
+</body>
+</html>
