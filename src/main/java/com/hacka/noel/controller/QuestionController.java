@@ -99,7 +99,6 @@ public class QuestionController {
     public String result(Model out) {
         out.addAttribute("result", question.getResult());
         return "Question/result";
-<<<<<<< HEAD
     }
 
     @GetMapping("/questionBis")
@@ -107,7 +106,4 @@ public class QuestionController {
         out.addAttribute("result", question.getResult());
         return "Question/questionInfoBis";
     }
-
-=======
->>>>>>> e074c52506d1ec510dfc03103fd7bd249d2fdfd5
 }
