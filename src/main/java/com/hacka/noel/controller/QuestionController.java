@@ -102,7 +102,13 @@ public class QuestionController {
     @GetMapping("/result")
     public String result(Model out) {
         out.addAttribute("result", question.getResult());
-        return "questionInfoBis";
+        return "Question/result";
+    }
+
+    @GetMapping("/questionBis")
+    public String result2(Model out) {
+        out.addAttribute("result", question.getResult());
+        return "Question/questionInfoBis";
     }
 
 }
