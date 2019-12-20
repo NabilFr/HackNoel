@@ -147,7 +147,8 @@ h3 {
 .contact {
     background: #9FAEE5;
     color: white;
-    padding-top: 1em;
+    padding-top: 0.5em;
+    margin-top: 0 !important;
 }
 
 .formulaire {
@@ -168,6 +169,7 @@ button {
     border-radius: 5px;
     color: #9FAEE5;
     float: right;
+    margin-top: 0.7em;
 }
 
 button:hover {
@@ -175,9 +177,12 @@ button:hover {
     color: #003399;
 }
 
-#nom {
-    width: 50% !important;
+.nomPrenom {
+    display: flex;
+    justify-content: space-between;
 }
-#prenom {
-    width: 50% !important;
+
+div.container-fluid.p-0.pb-3 {
+    padding: 0 !important;
+    background: #9FAEE5;
 }

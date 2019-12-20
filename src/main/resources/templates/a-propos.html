@@ -22,20 +22,30 @@
     <a href="http://www.calvera.es/fr/"><img alt="image" class="img" src="../static/images/logo_feda_q.jpg" th:src="@{/images/logo_feda_q.jpg}"></a>
     <a href="http://www.calvera.es/fr/"><img alt="image" class="img" src="../static/images/logotipo-FHA-socio.jpg" th:src="@{/images/logotipo-FHA-socio.jpg}"></a>
 </div>
+<div class="container-fluid p-0 pb-3">
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.4392990514557!2d1.4285397149429298!3d43.59739406405653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb62f2131681%3A0x62336d5cff38c7f5!2sWild%20Code%20School%20-%20Formations%20d%C3%A9veloppeur%20web%2Fmobile%20et%20data%20analyst!5e0!3m2!1sfr!2sfr!4v1576837408796!5m2!1sfr!2sfr"
+            width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+</div>
 <h3 class="contact">Nous contacter:</h3>
 <div class="formulaire">
     <form>
-        <div class="form-group">
-            <label for="nom">Nom :</label>
-            <input type="text" class="form-control" id="nom" placeholder="Nom">
-        </div>
-        <div class="form-group">
-            <label for="prenom">Prénom :</label>
-            <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+        <div class="nomPrenom">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" class="form-control" id="nom" placeholder="Nom">
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+            </div>
         </div>
         <div class="form-group">
             <label for="exampleInputEmail1">Addresse email :</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="object">Object :</label>
+            <input type="text" class="form-control" id="object" placeholder="Object">
         </div>
         <div class="form-group">
             <label for="question">Question :</label>
